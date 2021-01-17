@@ -11,5 +11,5 @@ func main() {
 
 	http.HandleFunc("/", handlers.RootHandler)
 	http.HandleFunc("/winners", handlers.WinnersHandler)
-	http.ListenAndServe(":8000", nil)
+	http.ListenAndServe("localhost:8000", nil)
 }
